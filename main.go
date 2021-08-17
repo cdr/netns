@@ -12,7 +12,7 @@ import (
 	"github.com/genuinetools/netns/network"
 	"github.com/genuinetools/netns/version"
 	"github.com/genuinetools/pkg/cli"
-	"github.com/opencontainers/runc/libcontainer/configs"
+	"github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/sirupsen/logrus"
 )
 
@@ -104,7 +104,7 @@ func main() {
 }
 
 // readHookData decodes stdin as HookState.
-func readHookData() (hook configs.HookState, err error) {
+func readHookData() (hook specs.State, err error) {
 	// Read hook data from stdin.
 	b, err := ioutil.ReadAll(os.Stdin)
 	if err != nil {

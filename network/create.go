@@ -7,7 +7,7 @@ import (
 
 	"github.com/genuinetools/netns/bridge"
 	"github.com/genuinetools/netns/netutils"
-	"github.com/opencontainers/runc/libcontainer/configs"
+	"github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/sirupsen/logrus"
 	"github.com/vishvananda/netlink"
 	"github.com/vishvananda/netns"
@@ -16,7 +16,7 @@ import (
 
 // Create returns a container IP that was created with the given bridge name,
 // the settings from the HookState passed, and the bridge options.
-func (c *Client) Create(hook configs.HookState, brOpt bridge.Opt, staticip string) (net.IP, error) {
+func (c *Client) Create(hook specs.State, brOpt bridge.Opt, staticip string) (net.IP, error) {
 	var nsip net.IP
 	// Open the database.
 	if err := c.openDB(false); err != nil {

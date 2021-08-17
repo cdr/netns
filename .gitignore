@@ -50,3 +50,4 @@ coverage.txt
 profile.out
 
 !go.mod
+.vscode
