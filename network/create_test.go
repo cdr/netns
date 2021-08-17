@@ -7,7 +7,7 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/genuinetools/netns/bridge"
+	"cdr.dev/netns/bridge"
 	"github.com/opencontainers/runc/libcontainer/configs"
 )
 

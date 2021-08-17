@@ -5,7 +5,7 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/genuinetools/netns/bridge"
+	"cdr.dev/netns/bridge"
 )
 
 const createHelp = `Create a network.`

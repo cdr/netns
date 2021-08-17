@@ -8,9 +8,9 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/genuinetools/netns/bridge"
-	"github.com/genuinetools/netns/network"
-	"github.com/genuinetools/netns/version"
+	"cdr.dev/netns/bridge"
+	"cdr.dev/netns/network"
+	"cdr.dev/netns/version"
 	"github.com/genuinetools/pkg/cli"
 	"github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/sirupsen/logrus"
