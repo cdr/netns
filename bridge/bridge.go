@@ -6,8 +6,8 @@ import (
 	"net"
 	"strings"
 
-	"github.com/docker/libnetwork/iptables"
 	"cdr.dev/netns/netutils"
+	"github.com/docker/libnetwork/iptables"
 	"github.com/vishvananda/netlink"
 )
 
@@ -56,7 +56,9 @@ func Init(opt Opt) (*net.Interface, error) {
 	}
 
 	// Create *netlink.Bridge object.
-	la := netlink.NewLinkAttrs()
+	// This specifically does not call netlink.NewLinkAttrs() to avoid
+	// setting a value for qlen. The intent is to emulate Docker.
+	var la netlink.LinkAttrs
 	la.Name = opt.Name
 	la.MTU = opt.MTU
 	br := &netlink.Bridge{LinkAttrs: la}

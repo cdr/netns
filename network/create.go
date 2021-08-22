@@ -182,7 +182,10 @@ func (c *Client) vethPair(pid int, bridgeName string) (*netlink.Veth, error) {
 		return nil, fmt.Errorf("getting link %s failed: %v", bridgeName, err)
 	}
 
-	la := netlink.NewLinkAttrs()
+	// This specifically does not call netlink.NewLinkAttrs() to avoid
+	// setting a value for qlen.
+	// The intent is to emulate Docker.
+	var la netlink.LinkAttrs
 	la.Name = fmt.Sprintf("%s-%d", c.opt.PortPrefix, pid)
 	la.MTU = br.Attrs().MTU
 	la.MasterIndex = br.Attrs().Index
