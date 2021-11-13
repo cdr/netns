@@ -8,10 +8,11 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/erikh/ping"
 	"github.com/sirupsen/logrus"
 	"github.com/vishvananda/netlink"
 	bolt "go.etcd.io/bbolt"
+
+	"cdr.dev/netns/network/ping"
 )
 
 // AllocateIP returns an unused IP for a specific process ID
