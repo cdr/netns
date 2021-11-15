@@ -6,7 +6,6 @@ require (
 	github.com/boltdb/bolt v1.3.1 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/docker/libnetwork v0.0.0-20180914141841-20461b853933
-	github.com/erikh/ping v0.0.0-20141209185752-d731d249e12a
 	github.com/genuinetools/pkg v0.0.0-20180910213200-1c141f661797
 	github.com/godbus/dbus v4.1.0+incompatible // indirect
 	github.com/opencontainers/runc v0.0.0-20180920170208-00dc70017d22

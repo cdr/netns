@@ -4,8 +4,6 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/docker/libnetwork v0.0.0-20180914141841-20461b853933 h1:kYuklxtEizUcgJDn38ZYxngvGFZn4I7pdGqImZI9Bzg=
 github.com/docker/libnetwork v0.0.0-20180914141841-20461b853933/go.mod h1:93m0aTqz6z+g32wla4l4WxTrdtvBRmVzYRkYvasA5Z8=
-github.com/erikh/ping v0.0.0-20141209185752-d731d249e12a h1:xYb+yyQiRJ/j9MeLxAxY7y5zxlKJRsuJrL9aIjvm6ys=
-github.com/erikh/ping v0.0.0-20141209185752-d731d249e12a/go.mod h1:m0Cg23THf2kNTu+CtJHoq2IjqNQke24ZV8GQlGDfQf4=
 github.com/genuinetools/pkg v0.0.0-20180910213200-1c141f661797 h1:SGpZXDd/CFeDIY4Rq5cFO8K/uqDblHUxjlzOmjFpvRg=
 github.com/genuinetools/pkg v0.0.0-20180910213200-1c141f661797/go.mod h1:XTcrCYlXPxnxL2UpnwuRn7tcaTn9HAhxFoFJucootk8=
 github.com/godbus/dbus v4.1.0+incompatible h1:WqqLRTsQic3apZUK9qC5sGNfXthmPXzUZ7nQPrNITa4=
